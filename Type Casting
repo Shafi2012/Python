@@ -1,0 +1,29 @@
+name="Shafi"
+age=15
+is_buisnessman=False
+weight=51.3
+print("Name :", name)
+print("Data Type of Name is", type(name))
+print("Age :", age)
+print("\n After Type Casting")
+age = str(age)
+print(age)
+print("Data Type of age is", type(age))
+
+num1=45
+num2=3
+
+print("Number 1", num1)
+print("Number 2", num2)
+print("Addition :", num1+num2)
+print("Difference :", num1-num2)
+print("Product :", num1*num2)
+print("Division :", num1/num2)
+print("Floor Division :", num1//num2)
+print("Modulas Operation :", num1%num2)
+print("Square :", num2**num1)
+print("Square Root :", num1**0.5)
+print("Equal ?, num1==num2")
+print("Number 1 greater?", num1>num2)
+print("Number2 greater?",num1<num2)
+print("Not Equal ?",num1!=num2)
