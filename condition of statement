@@ -1,0 +1,38 @@
+'''number = int (input("Enter Number to check"))
+print("Number to be checked :",number)
+ 
+if number%2==0 :
+ print("This is an even number")
+else:
+ print("This is an odd number")'''
+
+'''height = float(input("Enter your height in m:"))
+weight = float(input("Enter your weight in kg:"))
+BMI = weight /(height)**2
+print("Your BMI is", BMI)
+
+if BMI <= 18.4:
+ print("You are underweight focus on your eating.")
+elif BMI <= 24.9:
+ print("You are healthy congratulation.")
+elif BMI <= 29.9:
+ print("You are over weight kepp ur diet in balance.")
+elif BMI <= 34.9:
+ print("You are severely over weight (you look ugly please change ur life).")
+elif BMI <= 39.9:
+ print("You are obese (every furniture has been broken for you Im fed up) .")
+else:
+ print("You are severely obese (I dont have anything to say)")'''
+
+import datetime
+
+# using now() to get current time
+current_time = datetime.datetime.now()
+
+# Printing value of now.
+print("Time now at greenwich meridian is : ", end = "")
+print(current_time)
+
+#print calender of year 2029
+import calendar
+print("\n", calendar.calendar(2029))
