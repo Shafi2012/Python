@@ -1,0 +1,41 @@
+print("Welcome to the ultimate ride selector on uber")
+print("Choose your ride")
+print("1.🚗 Car")
+print("2.🏍️ bike")
+
+# Take input for ride type
+choice = int(input("Choice your ride(1 or 2)"))
+
+# If users chooses car
+if choice == 1:
+    print("\nGreat Choice! You chose a car")
+    print("Now choose your size")
+    print("1. UberX")
+    print("2. UberXL")
+    choice2 = int(input("Choice your ride"))
+    if choice2 == 1:
+       print("Great! You have chose uberX, Your ride is on the way")
+    elif choice2 == 2:
+        print("Good 🫤 You have chose UberXL, Your ride is on the way")
+    else:
+        print("Are you dumb or blind")
+
+    
+ # If user chooses bike
+elif choice == 2:
+    print("\nBAD CHOICE!! Still Ok you chose a bike🫤")
+    print("Now choose your style")
+    print("1. Bike")
+    print("2. Skooty")
+    choice2 = int(input("Choice your ride"))
+    if choice2 == 1:
+       print("Great! You have chose Bike, Your ride is on the way")
+    elif choice2 == 2:
+        print("Good 🫤 You have chose Skooty, Your ride is on the way")
+    else:
+        print("Are you dumb or blind")
+
+# If user enters wrong input
+else:
+ print("nvalid choice! You are arrested 🙂")
+
