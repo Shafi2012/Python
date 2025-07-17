@@ -1,0 +1,22 @@
+#define function to calculate cube 
+def cube(number):
+ return number*number*number
+
+#define a function whih will execute cube function if the user entered number is divisible by 3
+def by_three(number):
+ if number %3 ==0:
+  return cube(number)
+ else:
+  return False
+ #display result
+print(by_three(34456780))
+print(by_three(34))
+ def total_calc(bill_amount,tip_percentage):
+#define function to calculate the tip on bill
+  total = bill_amount*(1 + 0.01*tip_percentage)
+  total = round(total,0)
+  print(f"Please pay${total}")
+
+  #Specify ony Bills_amount
+  #Default value of tip percentage is used
+total_calc(12345650,99)
