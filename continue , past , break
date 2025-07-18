@@ -1,0 +1,33 @@
+var = 10   #initialize
+while var > 0:  #literate loop
+    var = var - 1
+    if var == 5:  #condition 1
+        continue  # continue statement
+    #display result
+    print ('\nCurrent variable value :', var)
+print("/nSee you soon!") 
+
+
+  #Take user input
+a = input("Enter a word:")
+#program to check break keyword
+for i in a: #iterate for loop
+ if (i == 'A'): #condition 1
+  #display result
+    print ("A is found")
+    break #break statement
+ else:
+ #display result
+    print("A is not found")
+
+
+for i in range(2):
+    if i ==0:
+        print("anda")
+    if i ==1:
+        print("1st")
+    if i ==2:
+        pass
+    if i ==3:
+        print("3rd")    
+      
