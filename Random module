@@ -1,0 +1,35 @@
+import random
+options = ["Rock","Paper","Scissors"]
+user_choice = input("Choose Rock,Paper, or Scissors: ")
+computer_choice =  random.choice(options)
+print("Your chose", user_choice)
+print("Computer chose:",computer_choice)
+if user_choice == computer_choice:
+    print("It is a draw!")
+elif user_choice == "Rock" and computer_choice == "Scissors":
+    print("Rock smashes scissors! I lose ")
+elif user_choice == "Paper" and computer_choice == "Rock":
+    print("paper covers rock! I lose ")  
+elif user_choice == "Scissors" and computer_choice == "Paper":
+    print("Scissors cut paper! I lose ")  
+else:
+    print("I win! Better luck next time.")    
+
+
+
+
+
+
+import random
+playing = True
+number = str(random.randint(13,25))
+print("I will generate a number from 1323" \
+" 13 to 25, and you have to guess the number one digit at a time.")
+print("The game ends when you have 1 hero  ")
+while playing:
+  guess = input("Give me your best guess! \n")
+  if number == guess:
+    print("You will win the game") 
+    print("The number was",number)
+  else:
+   print("Your guess isnt quite right,try again \n")
