@@ -1,0 +1,33 @@
+# function to check whether first and last character of words match\
+def match_words(words):
+    ctr = 0
+    lst = []
+    for x in words:
+        if len(x) > 1 and x[0] == x[-1]:
+                    ctr = ctr+1
+                    lst.append(x)
+    print("List of words with first and last character same\n", lst)
+    return ctr
+count = match_words(['abcdse', 'cfirc','ddddddddc','101101010', 'MFM' ])
+print("Number of words having first and character same:", count)
+
+
+
+
+
+#Create an empty list
+empty_list = []
+print()
+
+# A list of numbers
+number = [1, 2, 3, 4, 5]
+print(number)
+
+# Use * operator
+triples = [1, 2, 3] * 3
+print(triples)
+
+# Reverse the given list
+alist = [100, 200, 300, 400, 500]
+alist = alist[::-2]
+print(alist,"\n")
