@@ -1,0 +1,38 @@
+country_code = {'India' : '2024',
+                'Bangladesh' : '1971',
+                 'Nepal' : '00977'}
+
+# search dictionary for country code of Bnagladesh
+print("Country code for Bangladesh -")
+print(country_code.get('Bangladesh', 'Sorry'))
+
+# seach dictionary for country code of Pakistan
+print("Country code for pakistan- ")
+print(country_code.get('Pakistan', 'sorry'))
+
+
+
+
+student_data = {'id1':
+{'name': ['Shafi'],
+  'class': ['Vii'],
+'subject_integration': ['english 1st paper, English 2nd paper']},
+'id2':
+{'name': ['Sara'],
+  'class': ['V'],
+'subject_integration': ['math and bangla']},
+'id3':
+{'name': ['Sadab'],
+  'class': ['Vi'],
+'subject_integration': ['english 1st paper, Math, Art']},
+'id4':
+{'name': ['Sara'],
+  'class': ['V'],
+'subject_integration': ['math and bangla']},}
+result = {}
+for key,value in student_data.items():
+    if value not in result.values():
+        result[key] = value
+
+print(result)
+
