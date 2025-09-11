@@ -1,0 +1,35 @@
+class fruit:
+    #class variable
+ taste ='sweet'
+
+# instance variable
+ def __init__(self, name, color):
+    self.name = name
+    self.color = color
+# Object creation
+apple = fruit('Apple', 'Blue')
+banana = fruit('Banana','red')
+print(apple.taste)
+print(apple.name, apple.color)
+print(banana.name, banana.color)
+
+
+
+
+
+# create class
+class vehicle:
+
+    # create init method
+      def __init__(self, max_speed, mileage):
+    
+# blind the arguments
+       self.max_speed = max_speed
+       self.mileage = mileage
+
+# Object creation
+modelX = vehicle(320,78)
+
+# access the variables inside init method
+print("Model Max Speed:",modelX.max_speed)
+print("Model mileage:",modelX.mileage)
