@@ -1,0 +1,87 @@
+# parent class
+class Person(object):
+
+    # __init__ is known as the constructor
+    def __init__(self, name, idnumber):
+        self.name = name
+        self.idnumber = idnumber
+    def display(self):
+        print(self.name)
+        print(self.idnumber)
+
+# child class
+class Employee(Person):
+    def __init__(self, name, idnumber, salary, post):
+        super().__init__(name, idnumber)
+        self.salary = salary
+        self.post = post
+
+#creation of an object variable or an instance
+a = Employee('Shafi', 171804, 130000, "Intern")
+
+# calling a function of the class Person using its instance
+a.display()
+
+
+
+# Parent class
+class dad:
+    def __init__(self, eyes, aggresive):
+        self.eyes = eyes
+        self.aggresive = aggresive
+    
+    def display(self):
+        print("Your eyes color is", self.eyes)
+        print("You are aggresive", self.aggresive)
+    
+# Child class
+class son(dad):
+
+    def __init__(self, name, age, eyes, aggresive):
+        self.name = name
+        self.age = age
+
+        dad.__init__(self, eyes, aggresive)
+
+# Object Creation
+obj = son("Penguin", 8, "blue", True)
+
+# Calling method display
+obj.display()
+
+
+
+
+
+
+# Parent Class
+class Bird:
+
+    def __init__(self):
+        print("Bird  is ready")
+
+    def whoisThis(self):
+        print("Bird")
+    
+    def swim(self):
+        print("swim faster")
+
+# child class
+class penguin(Bird):
+
+    def __int__(self):
+        # call super() function
+        super().__init__()
+        print("penguin is ready ")
+    def whoisThis(self):
+        print("Penguin")
+
+    def run(self):
+        print("run faster")
+
+peggy = penguin()
+peggy.whoisThis()
+peggy.swim()
+peggy.run()
+
+
