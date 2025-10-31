@@ -1,0 +1,73 @@
+# import necesssary libraries
+from tkinter import *
+from datetime import date
+# create window
+root = Tk()
+root.title('getting started wth wigdets')
+root.geometry('400x300')
+
+# add widgets
+#aff label
+lbl = Label(text="Hey There!", fg = "blue", bg = "white",  height=1, width=234)
+
+# ADd label for getting name as input from users
+# use Entry widget to create a text box for users to enter details
+name_lbl = Label(text="Full name", bg="#3495D3")
+name_entry = Entry()
+
+# Function to display a mgs
+def display():
+    # Read input given by the users
+    name = name_entry.get()
+    # Declaring a global variable
+    # to make it accesible anywere in the pgrm
+    global Message
+    Message = "Welcome to the Application! \nToday's date is:"
+    greet = "Hello "+name+"\n"
+    # display details in the txt bx
+    #Specify where to add the details inside the txt bx
+    text_box.insert(END, greet)
+    text_box.insert(END, Message)
+    text_box.insert(END, date.today())
+
+# add text widgets to display info
+text_box = Text(height=3)
+
+# Add button and give value of command as name of the function
+# Press button, display function will be called automically
+btn = Button(text="Begin", command=display, height=1, bg="#3456A0", fg = 'white')
+
+# Organize all the widgets in the windows
+lbl.pack()
+name_lbl.pack()
+name_entry.pack()
+btn.pack()
+text_box.pack()
+# Start the GUI event loop
+root.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Import necessary libraries
+from tkinter import *
+
+# create winow
+window = Tk()
+
+# Set the window title and Geometry
+window.title('Demo window')
+window.geometry('400x300')
+# start the GUI event loop
+window.mainloop()
