@@ -1,0 +1,31 @@
+import pygame
+from pygame import mixer
+
+# Initialize pygame
+pygame.init()
+
+# Create the screen
+screen = pygame.display.set_mode((800, 600))
+
+# Title and Icon
+pygame.display.set_caption("Space Invader - Level Up")
+
+# Background Image
+background = pygame.image.load("background.png")  # Replace with your image filename
+
+# Background Sound
+mixer.music.load("background.wav")  # Replace with your sound file
+mixer.music.play(-1)  # -1 means play on loop
+
+# Main game loop
+running = True
+while running:
+    # Draw the background image
+    screen.blit(background, (0, 0))
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Update the screen
+    pygame.display.update()
