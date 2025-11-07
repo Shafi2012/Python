@@ -1,0 +1,46 @@
+# import necessary libraries
+from tkinter import *
+
+#create window
+window = Tk()
+window.title("Event Handler")
+window.geometry('100x100')
+
+# event handler for keypass
+def handle_keypass(event):
+    #Print the charecter associated to the key pressed
+    print(event.char)
+
+# blind key press event to handle_keypress()
+def handle_click(event):
+    print("\nThe button was clicked!")
+
+button = Button(text="Click me")
+button.pack()
+
+# blind click event to handle_click()
+button.bind("<Button-1>", handle_click)
+
+#  start the gui event loop
+window.mainloop()
+
+
+
+
+# import necessay libraries
+from tkinter import *
+from tkinter import messagebox
+
+# setup tkinter window
+root = Tk()
+# function for displaying warning mgs
+# this will be called once the button is clicked
+def mgs():
+    messagebox.showwarning("Alert","Stop! virus found")
+#adding button widget to window
+button = Button(root, text="Scan for virus",command=mgs) 
+button.place(x=40, y=80)
+
+# entering main loop
+root.mainloop()
+
