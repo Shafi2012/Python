@@ -1,0 +1,83 @@
+import numpy as np
+
+# DEfine the structured data type
+
+data_type = [('name', 'U15'), ('class', int), ('height', float)]
+
+# define students details
+
+students_details = [
+
+('James', 5, 48.5),
+
+('Nail', 6, 52.5),
+
+('Paul', 5, 42.10),
+
+('Pit', 5, 40.11)
+
+]
+
+# Create a structured numpy array
+
+students = np.array(students_details, dtype=data_type)
+
+# Print the original array
+
+print('original array : ')
+
+print(students)
+
+# Sort by height
+
+print('\nSort by height : ')
+
+print(np.sort(students, order='height'))
+
+# Sort by class
+
+print('\nSort by class')
+
+print(np.sort(students, order='class'))
+
+# Sort by height
+
+print('students with height more than 50 (U may get EMOTIONAL DAMAGE ```): ')
+
+student2 = students[students['height']>50]
+
+
+
+
+import numpy as np
+
+# array 1
+a = np.arange(9, dtype=np.float64).reshape(3,3)
+print('first array :')
+print(a)
+print('\n')
+
+# array 2
+b = np.array([10,10,10])
+print('second array :')
+print(b)
+print('\n')
+
+# performing arithmetic operations
+print('add the two arrays :')
+print(np.add(a,b))
+print('\n')
+
+print('subtract the two arrays :')
+print(np.subtract(a,b))
+print('/n')
+
+print('multiply the two arrays :')
+print(np.multiply(a,b))
+print('/n')
+
+print('divide the two arrays :')
+print(np.divide(a,b))
+print('/n')
+
+print(student2)
